@@ -8,6 +8,8 @@ WORKDIR /app
 # copy json file to install dependencies
 COPY package.json /app/package.json
 
+ENV NEXT_PUBLIC_API_URL=https://warren-transactions-api.herokuapp.com/api
+
 # install dependencies
 RUN npm install
 
